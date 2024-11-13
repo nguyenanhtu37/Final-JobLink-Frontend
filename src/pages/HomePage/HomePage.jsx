@@ -133,7 +133,7 @@ const HomePage = () => {
         <h2>Đội ngũ của chúng tôi</h2>
         <div className="team">
           <div className="team-member">
-            <img src="blob:https://www.facebook.com/7d407e08-0a9e-43be-89c8-e6e68ea937dc" alt="John Doe" />
+            <img src="https://photos.fife.usercontent.google.com/pw/AP1GczOWP81ZnCmZj-Q2WjXFkK8ytH07MdKa2m88EBAVKyAiJtXO99dUI9cBQw=w1101-h1469-s-no-gm?authuser=0" alt="John Doe" />
             <h3>Phạm Công Lê Tuấn</h3>
             <p>CEO & Người sáng lập</p>
           </div>
