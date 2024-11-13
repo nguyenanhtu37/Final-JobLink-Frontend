@@ -1,0 +1,147 @@
+.feedback-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #EEE;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.feedback-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.feedback-item {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}
+
+.feedback-description,
+.feedback-date {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.feedback-divider {
+    margin-top: 15px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .feedback-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .feedback-item {
+        padding: 15px;
+    }
+
+    .feedback-title {
+        font-size: 20px;
+    }
+
+    .feedback-name {
+        font-size: 18px;
+    }
+}   
+
+.feedback-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    border: none;
+}
+
+.feedback-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.feedback-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+.left {
+    padding: 20px;
+}
+
+.feedback-description {
+    font-size: 16px;
+    color: #555;
+}
+
+.feedback-date {
+    font-size: 14px;
+    color: #999;
+}
+
+.feedback-divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f1f1f1;
+}
+
+.handle-button {
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #218838;
+    }
+
+    &:disabled {
+        background-color: #c6e1c6;
+        cursor: not-allowed;
+    }
+
+    &.handled {
+        background-color: #6c757d;
+    }
+}

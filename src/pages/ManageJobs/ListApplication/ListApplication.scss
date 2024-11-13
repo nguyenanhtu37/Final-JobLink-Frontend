@@ -1,0 +1,16 @@
+.list-applications{
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .back{
+    cursor: pointer;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}

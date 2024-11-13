@@ -1,0 +1,93 @@
+.all-form {
+    max-height: 700px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .inline-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        h2 {
+            margin: 0px;
+        }
+
+        h2:last-child {
+            cursor: pointer;
+        }
+
+        .green-title {
+            color: #66bc46;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+        resize: none;
+        padding: 10px;
+        border: none;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        background-color: #EEEE;
+        margin-top: 5px;
+        font-size: 1rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+
+    .upload-cv {
+        border: dashed 1px;
+        border-radius: 10px;
+        border-color: #66bc46;
+        padding: 10px;
+        text-align: center;
+
+        p {
+            font-size: 0.75rem;
+            color: gray;
+        }
+
+        #cv-btn {
+            padding: 10px;
+            background-color: #66bc46;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+    }
+
+    .red-title {
+        color: red;
+    }
+
+    #note {
+        padding: 10px;
+        color: gray;
+    }
+    .submit-btn {
+        text-align: center;
+        margin-bottom: 5px;
+
+        button {
+            padding: 10px 50px;
+            border: none;
+            border-radius: 5px;
+            background-color: #66bc46;
+            color: white;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: forestgreen;
+            transform: scale(1.1);
+        }
+    }
+}

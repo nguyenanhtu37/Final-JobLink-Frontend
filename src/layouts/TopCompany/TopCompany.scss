@@ -1,0 +1,82 @@
+.top-companies {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-left: 13%;
+
+    h2 {
+        margin-left: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 10px;
+        color: #66bc46;
+    }
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto; // cho phep cuon ngang
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+    padding: 10px 0;
+    width: calc(100% - 80px);
+}
+
+.card {
+    flex: 0 0 calc((100% / 3) - 30px); 
+    margin: 0 5px; 
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    font-size: 1rem;
+}
+
+.slider-button {
+    background-color: #66bc46;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.slider-button:hover {
+    background-color: darkgreen;
+}
+
+#career {
+    height: 80px;
+
+    .slider {
+        height: 100%;
+
+        .card {
+        display: grid;
+        place-items: center;
+        }
+    }
+}
+
+#top-desc {
+    color: gray;
+    margin-bottom: 50px;
+    max-width: 93%;
+    text-align: center;
+    font-size: 1rem;
+}

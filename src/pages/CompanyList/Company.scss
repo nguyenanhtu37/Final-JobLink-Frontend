@@ -1,0 +1,274 @@
+.company-page {
+    margin-top: 55px;
+}
+
+.top-company {
+    background: linear-gradient(25deg, #f1f8e9, #dcedc1, #a8e6cf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+  }
+
+.features-section {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .feature-item {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid green;
+        border-radius: 10px;
+        width: 200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        h3 {
+          margin-bottom: 10px;
+          font-size: 1.5em;
+        }
+
+        p {
+          color: #777;
+        }
+      }
+    }
+  }
+
+  .company-section {
+    padding: 40px 20px !important;
+
+    h2 {
+      text-align: center !important;
+      margin-bottom: 20px !important;
+      font-size: 2em !important;
+    }
+
+    .company {
+      display: flex !important;
+      justify-content: center !important;
+      flex-wrap: wrap !important;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .company-member {
+        margin: 20px !important;
+        text-align: center !important;
+        width: 200px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding-left: 30px;
+      }
+
+      img {
+        width: 200px !important;
+        height: 200px !important;
+        border-radius: 50% !important;
+        border: 4px solid green !important;
+        margin-bottom: 10px !important;
+      }
+
+      h3 {
+        margin: 0 !important;
+        font-size: 1.2em !important;
+      }
+    }
+  }
+
+  .top-companies {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-left: 13%;
+
+    h2 {
+        margin-left: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 10px;
+        color: #66bc46;
+    }
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto; // cho phep cuon ngang
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+    padding: 10px 0;
+    width: calc(100% - 80px);
+}
+
+.card {
+    flex: 0 0 calc((100% / 3) - 30px); 
+    margin: 0 5px; 
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    font-size: 1rem;
+}
+
+.slider-button {
+    background-color: #66bc46;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.slider-button:hover {
+    background-color: darkgreen;
+}
+
+#career {
+    height: 80px;
+
+    .slider {
+        height: 100%;
+
+        .card {
+        display: grid;
+        place-items: center;
+        }
+    }
+}
+
+#top-desc {
+    color: gray;
+    margin-bottom: 50px;
+    max-width: 93%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.all-companies {
+  background-color: #EEE;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: green;
+  }
+}
+
+.company-item {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 550px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+  }
+}
+
+.company-logo-container {
+  width: 100px;
+  height: 100px; 
+  margin-right: 20px; 
+  min-width: 100px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.company-logoo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.company-details {
+  flex-grow: 1;
+  text-align: left; 
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #333;
+  font-weight: 600;
+}
+
+p {
+  color: #555;
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+p span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.company-item a {
+  text-decoration: none;
+  color: green;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.company-item a:hover {
+  color: #0056b3;
+}
+
+.company-content {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 20px;
+}
+
+.filter-sections {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 230px;
+}
+
+.search-inputs {
+  padding: 5px;
+  font-size: 1em;
+  width: 200px;
+}

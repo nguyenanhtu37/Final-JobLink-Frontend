@@ -1,0 +1,444 @@
+.all-cv {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+
+    .template {
+        display: flex;
+        box-shadow: 0 16px 50px rgba(0, 0, 0, 0.7);
+        background-color: white;
+        align-self: flex-start;
+        margin-top: 50px;
+
+        .cv-left {
+            flex: 5;
+            padding: 20px 20px;
+            background: linear-gradient(45deg, #E0E0E0, #FFFFFF);
+
+            textarea {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                overflow: hidden;
+                resize: none;
+                padding: 10px;
+                border: none;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 10px;
+                background-color: #EEEE;
+                margin-top: 5px;
+                font-size: 1rem;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                white-space: pre-wrap;
+            }
+
+            .seperated-block {
+                margin: 20px 0px;
+
+                h3 {
+                    margin-bottom: 30px;
+                }
+
+                #company {
+                    border: none;
+                    width: 100%;
+                    font-size: 1rem;
+                }
+
+                .two-part {
+                    display: flex;
+                    gap: 30px;
+
+                    .one {
+                        flex: 4;
+                        width: 100%;
+
+                        #education,
+                        #experience {
+                            width: 100%;
+                            font-weight: bold;
+                            border: none;
+                            padding: 5px 10px;
+                            background-color: #f9f9f9;
+                            font-size: 1rem;
+                        }
+
+                        #project {
+                            width: 100%;
+                            font-weight: bold;
+                            border: none;
+                            padding: 5px 10px;
+                            background-color: #f9f9f9;
+                            font-size: 1rem;
+                        }
+
+                        #company {
+                            width: 100%;
+                            border: none;
+                            padding: 5px 10px;
+                            background-color: #f9f9f9;
+                            font-size: 1rem;
+                        }
+
+                        #position {
+                            text-align: left;
+                            border: none;
+                            padding: 5px 10px;
+                            width: 100%;
+                            background-color: #f9f9f9;
+                            font-size: 1rem;
+                        }
+
+                        #subject {
+                            text-align: left;
+                            border: none;
+                            padding: 5px 10px;
+                            background-color: #f9f9f9;
+                            width: 98%;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .two {
+                        flex: 1;
+
+                        #time,
+                        #position,
+                        #member {
+                            text-align: right;
+                            border: none;
+                            padding: 5px 10px;
+                            background-color: #f9f9f9;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cv-right {
+            flex: 2;
+            padding: 20px;
+            background-color: #E5C7A0;
+
+            .profile-container {
+                margin: 20px 0px;
+            }
+
+            .center {
+                text-align: center;
+                margin-top: 20px;
+
+                #avatar {
+                    height: 300px;
+                    width: 300px;
+                }
+
+                #personalName {
+                    text-align: center;
+                    width: 100%;
+                    padding: 20px 0;
+                    font-weight: bold;
+                    background-color: #E5C7A0;
+                    border: none;
+                    font-size: 2rem;
+                    color: white;
+                    box-sizing: border-box;
+                }
+
+                #personalName::placeholder {
+                    color: white;
+                }
+
+                #personalPosition {
+                    text-align: center;
+                    width: 100%;
+                    padding: 5px 0px;
+                    background-color: #E5C7A0;
+                    border: none;
+                    font-size: 1.5rem;
+                    color: white;
+                }
+
+                #personalPosition::placeholder {
+                    color: white;
+                }
+            }
+
+            .info {
+
+                .input-field {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    background-color: #E5C7A0;
+                    border: none;
+                    width: 100%;
+                    color: white;
+                    font-size: 1rem;
+                    padding: 5px;
+                }
+
+                .input-field::placeholder {
+                    color: white;
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .input-group {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+
+                .icon {
+                    color: white;
+                    margin-right: 10px;
+                    font-size: 1.2em;
+                }
+
+                .input-field {
+                    flex: 1;
+                }
+
+            }
+        }
+    }
+}
+
+.seperated-block {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.seperated-block h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.template-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    background-color: silver;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.skill-name {
+    width: 200px;
+}
+
+.skill-name input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background-color: silver;
+    font-weight: bold;
+}
+
+.progress-container {
+    flex-grow: 2;
+    margin-left: 10px;
+    position: relative;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 10px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #66bc46;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.sliderr {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.cv-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container-block-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#language {
+    background-color: #E5C7A0;
+    margin: 5px;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#language::placeholder {
+    color: white;
+}
+
+#language-title {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.tag-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 9999;
+}
+
+.upload-tag {
+    display: flex;
+    align-items: center;
+    background-color: #66bc46;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upload-tag:hover {
+    background-color: #58a539;
+    transform: scale(1.05);
+}
+
+.tag {
+    background-color: #66bc46;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tag:hover {
+    background-color: #58a539;
+    transform: scale(1.05);
+}
+
+.cv-name {
+    background-color: #E5C7A0;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.cv-name:hover {
+    background-color: #e8ae62;
+    transform: scale(1.05);
+}
+
+.upload-input {
+    display: none;
+}
+
+.deleteButton {
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.deleteButton:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+.download-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}

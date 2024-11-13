@@ -1,0 +1,121 @@
+.all-favorite {
+    margin: auto;
+    margin-top: 100px;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+}
+
+.favorite-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.favorite-item-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.company-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.favorite-details {
+    flex: 1;
+
+    h2 {
+        color: #333;
+        font-size: 1.25rem;
+        margin: 0 0 8px;
+    }
+
+    p {
+        margin: 4px 0;
+        font-size: 0.9rem;
+        color: #555;
+        width: max-content;
+    }
+    .gray-background{
+        background-color: silver;
+        height: fit-content;
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+.remove-button, .apply-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 8px;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #45a049;
+    }
+}
+
+.remove-button {
+    background-color: #FF4D4D;
+    border-radius: 0px;
+    height: 170px;
+    width: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    &:hover {
+        background-color: #e60000;
+    }
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-item {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
+}
+
+.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-icon {
+    font-size: 25px;
+}
