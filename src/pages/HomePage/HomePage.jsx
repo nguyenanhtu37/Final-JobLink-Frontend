@@ -133,12 +133,12 @@ const HomePage = () => {
         <h2>Đội ngũ của chúng tôi</h2>
         <div className="team">
           <div className="team-member">
-            <img src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-9/71003596_391373321539387_6038426767784411136_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGWJ8WSKotslOwjlpxH3eg4y-fRsNk0rpzL59Gw2TSunCQ2FchLo-5fvXZQa0pQ3UQCRZ1y-_53bT2GNr6O9UkU&_nc_ohc=nfvzSzVdEj8Q7kNvgGr1wNc&_nc_zt=23&_nc_ht=scontent.fsgn2-5.fna&_nc_gid=AzktLsZSMMslZwe7yH4iapi&oh=00_AYBLVH8EiCCHgTufZp-kcN4pRm-K080_m28QaL7ucPfWbA&oe=67524122" alt="John Doe" />
+            <img src="blob:https://www.facebook.com/7d407e08-0a9e-43be-89c8-e6e68ea937dc" alt="John Doe" />
             <h3>Phạm Công Lê Tuấn</h3>
             <p>CEO & Người sáng lập</p>
           </div>
           <div className="team-member">
-            <img src="https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-1/465839446_1497316174303790_4852184452369956642_n.jpg?stp=dst-jpg_s160x160&_nc_cat=103&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHabzipcn339j37QNHVTVIwXMIub6-j0chcwi5vr6PRyIf4M6lRo95VWB2y4llWjBNS8gFXxnU-60CkvPTb6Aup&_nc_ohc=faidCdOciw4Q7kNvgE01Q_7&_nc_zt=24&_nc_ht=scontent.fdad3-1.fna&_nc_gid=Ad4OMug3dP2NJ3tTekpgucn&oh=00_AYC2rAxIdvQDYotP6Nn54TJk5j425nJ5ywXGmUaATevUBQ&oe=6730B662" alt="Nguyễn Anh Tú" />
+            <img src="https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/465839446_1497316174303790_4852184452369956642_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHabzipcn339j37QNHVTVIwXMIub6-j0chcwi5vr6PRyIf4M6lRo95VWB2y4llWjBNS8gFXxnU-60CkvPTb6Aup&_nc_ohc=725qx4EOE1AQ7kNvgGSPSdI&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=AiV9jo0gu03am7C9uN7VfNu&oh=00_AYAcTgatGGk6Dyd6HZHSF9YpWMGXrHFV7eF3eotS5uchJA&oe=673A9A24" alt="Nguyễn Anh Tú" />
             <h3>Nguyễn Anh Tú</h3>
             <p>CTO</p>
           </div>
