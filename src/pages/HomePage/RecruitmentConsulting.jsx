@@ -23,7 +23,7 @@ const RecruitmentConsulting = () => {
     e.preventDefault();
     console.log("Form data before sending:", formData);
     try {
-      const response = await fetch('http://localhost:8080/create/consultation', {
+      const response = await fetch('https://final-joblink-backend.onrender.com/create/consultation', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

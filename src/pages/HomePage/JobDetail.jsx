@@ -55,7 +55,7 @@ const JobDetail = () => {
             console.log(`UserId: ${userId}`);
             console.log(`JobId: ${jobId}`);
 
-            const response = await fetch('http://localhost:8080/v1/api/users/favorite', {
+            const response = await fetch('https://final-joblink-backend.onrender.com/v1/api/users/favorite', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ const JobDetail = () => {
     useEffect(() => {
         const fetchJobDetails = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/job-company');
+                const response = await axios.get('https://final-joblink-backend.onrender.com/job-company');
                 const foundJob = response.data.find(job => job._id === jobId);
                 setJob(foundJob);
                 setTitle(foundJob.title);

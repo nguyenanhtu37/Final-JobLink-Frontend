@@ -10,7 +10,7 @@ const Consultations = () => {
     useEffect(() => {
         const fetchConsultations = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/v1/api/admin/consultations');
+                const response = await axios.get('https://final-joblink-backend.onrender.com/v1/api/admin/consultations');
                 setConsultations(response.data);
             } catch (error) {
                 setError('Error fetching consultations');

@@ -23,8 +23,8 @@ function VideoCall() {
                     console.log('newClient: ', newClient);
 
                     const tokenUrl = role === 'jobseeker'
-                        ? 'http://localhost:8080/getAccessTokenForJobSeeker'
-                        : 'http://localhost:8080/getAccessTokenForEmployer';
+                        ? 'https://final-joblink-backend.onrender.com/getAccessTokenForJobSeeker'
+                        : 'https://final-joblink-backend.onrender.com/getAccessTokenForEmployer';
 
                     if (!role) {
                         console.error('Role is not defined');

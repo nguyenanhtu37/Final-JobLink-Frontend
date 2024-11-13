@@ -22,7 +22,7 @@ const ReportForm = ({ jobId, jobTitle }) => { // Thêm jobId vào props
         e.preventDefault(); // Ngăn chặn hành động mặc định của form
 
         try {
-            const response = await fetch(`http://localhost:8080/v1/api/users/report/create`, {
+            const response = await fetch(`https://final-joblink-backend.onrender.com/v1/api/users/report/create`, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',

@@ -94,7 +94,7 @@ const ManageCV = () => {
             if (!userId) return;
 
             try {
-                const response = await axios.get(`http://localhost:8080/v1/api/users/cv/user/${userId}`);
+                const response = await axios.get(`https://final-joblink-backend.onrender.com/v1/api/users/cv/user/${userId}`);
                 setCvList(response.data);
             } catch (error) {
                 console.error('Lỗi khi lấy danh sách CV:', error);
@@ -106,7 +106,7 @@ const ManageCV = () => {
 
     const handleDetailedCVClick = async (cvId) => {
         try {
-            const response = await axios.get(`http://localhost:8080/v1/api/users/cv/${cvId}`);
+            const response = await axios.get(`https://final-joblink-backend.onrender.com/v1/api/users/cv/${cvId}`);
             setSelectedCV(response.data);
             // Chuyển đổi chuỗi `language` thành một mảng các đối tượng với thuộc tính `name`
             const languageArray = response.data.language.split(', ').map(lang => ({ name: lang }));
@@ -310,7 +310,7 @@ const ManageCV = () => {
                 })),
             };
             console.log(formData);
-            const response = await axios.post('http://localhost:8080/v1/api/users/cv', formData);
+            const response = await axios.post('https://final-joblink-backend.onrender.com/v1/api/users/cv', formData);
             alert(response.data.message);
         } catch (error) {
             console.error("Error saving CV:", error);
@@ -329,7 +329,7 @@ const ManageCV = () => {
     
         if (isConfirmed) {
             try {
-                const response = await axios.delete(`http://localhost:8080/v1/api/users/cv/${cvId}`);
+                const response = await axios.delete(`https://final-joblink-backend.onrender.com/v1/api/users/cv/${cvId}`);
                 alert(response.data.message); 
             } catch (error) {
                 console.error('Lỗi xóa CV:', error);

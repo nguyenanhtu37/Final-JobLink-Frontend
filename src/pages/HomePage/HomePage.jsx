@@ -32,7 +32,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchFeedback = async () => {
       try {
-        const response = await fetch('http://localhost:8080/v1/api/users/feedback', {
+        const response = await fetch('https://final-joblink-backend.onrender.com/v1/api/users/feedback', {
           method: 'GET',
         });
         const data = await response.json();
@@ -54,7 +54,7 @@ const HomePage = () => {
   }, []);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/v1/api/admin/profession')
+    axios.get('https://final-joblink-backend.onrender.com/v1/api/admin/profession')
       .then(response => {
         setProfession(response.data);
         console.log("Fetched professions: ", response.data);
@@ -67,7 +67,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchCompanies = async () => {
       try {
-        const response = await fetch('http://localhost:8080/company-list');
+        const response = await fetch('https://final-joblink-backend.onrender.com/company-list');
         const data = await response.json();
 
         console.log('Fetched companies: ', JSON.stringify(data, null, 2));

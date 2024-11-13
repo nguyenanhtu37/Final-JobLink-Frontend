@@ -16,7 +16,7 @@ const FeedbackForm = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('http://localhost:8080/v1/api/users/feedback', {
+            const response = await fetch('https://final-joblink-backend.onrender.com/v1/api/users/feedback', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

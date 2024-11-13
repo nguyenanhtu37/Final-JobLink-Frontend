@@ -13,7 +13,7 @@ const CompanyDetail = () => {
     useEffect(() => {
         const fetchJobDetails = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/job-company');
+                const response = await axios.get('https://final-joblink-backend.onrender.com/job-company');
                 const foundJob = response.data.find(job => job._id === jobId);
                 setJob(foundJob);
             } catch (error) {

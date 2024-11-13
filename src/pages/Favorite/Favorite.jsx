@@ -21,7 +21,7 @@ const Favorite = () => {
     useEffect(() => {
         const fetchFavorite = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/v1/api/users/favorite/', {
+                const response = await axios.get('https://final-joblink-backend.onrender.com/v1/api/users/favorite/', {
                     params: { userId },
                 });
                 setFavorites(response.data);
@@ -38,7 +38,7 @@ const Favorite = () => {
         if (result === true) {
             try {
                 console.log(favoriteId._id);
-                await axios.delete(`http://localhost:8080/v1/api/users/favorite/${favoriteId._id}`);
+                await axios.delete(`https://final-joblink-backend.onrender.com/v1/api/users/favorite/${favoriteId._id}`);
                 setFavorites(favorites.filter(favorite => favorite._id !== favoriteId._id));
             } catch (error) {
                 console.log(error);

@@ -48,7 +48,7 @@ const ApplyForm = ({ onClose, jobTitle, jobId }) => {
         }
 
         try {
-            const response = await fetch(`http://localhost:8080/v1/api/users/apply?jobId=${jobId}`, { 
+            const response = await fetch(`https://final-joblink-backend.onrender.com/v1/api/users/apply?jobId=${jobId}`, { 
                 method: 'POST',
                 body: formData,
             });

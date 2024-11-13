@@ -6,7 +6,7 @@ const Feedback = () => {
     const [feedbacks, setFeedbacks] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8080/v1/api/users/feedback')
+        axios.get('https://final-joblink-backend.onrender.com/v1/api/users/feedback')
             .then(response => {
                 setFeedbacks(response.data.feedbacks);
                 console.log(response.data);
@@ -18,7 +18,7 @@ const Feedback = () => {
 
     const handleFeedback = async (feedbackId) => {
         try {
-            const response = await axios.put(`http://localhost:8080/v1/api/admin/feedback/${feedbackId}/handle`);
+            const response = await axios.put(`https://final-joblink-backend.onrender.com/v1/api/admin/feedback/${feedbackId}/handle`);
             alert(response.data.message); 
             setFeedbacks(feedbacks.map(feedback =>
                 feedback._id === feedbackId ? { ...feedback, isHandled: true } : feedback

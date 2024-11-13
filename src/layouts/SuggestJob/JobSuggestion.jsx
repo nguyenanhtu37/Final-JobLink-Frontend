@@ -30,7 +30,7 @@ const JobSuggestion = () => {
         const fetchUser = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get(`http://localhost:8080/v1/api/users/users/profession/${userId}`);
+                const response = await axios.get(`https://final-joblink-backend.onrender.com/v1/api/users/users/profession/${userId}`);
                 setUser(response.data);
                 setProfessionId(response.data.professionId.name);
                 setTitle(response.data.jobInput);
@@ -53,7 +53,7 @@ const JobSuggestion = () => {
 
     const fetJobsByProfession = async () => {
         try {
-            const response = await axios.get(`http://localhost:8080/filterByProfession?selectedProfession=${professionId}`);
+            const response = await axios.get(`https://final-joblink-backend.onrender.com/filterByProfession?selectedProfession=${professionId}`);
             const jobs = response.data;
             setJobListings(jobs);
             console.log('Suggestion: ', response.data);
@@ -78,7 +78,7 @@ const JobSuggestion = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:8080/jobs/search', {
+            const response = await fetch('https://final-joblink-backend.onrender.com/jobs/search', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

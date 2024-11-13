@@ -22,7 +22,7 @@ const Company = () => {
     useEffect(() => {
         const fetchCompanies = async () => {
             try {
-                const response = await fetch('http://localhost:8080/company-list');
+                const response = await fetch('https://final-joblink-backend.onrender.com/company-list');
                 const data = await response.json();
 
                 console.log('Fetched companies: ', JSON.stringify(data, null, 2));

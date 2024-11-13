@@ -12,7 +12,7 @@ const AppliedApplication = () => {
 
     const fetchApplications = async () => {
         try {
-            const response = await axios.get(`http://localhost:8080/v1/api/users/applications/${userId}`);
+            const response = await axios.get(`https://final-joblink-backend.onrender.com/v1/api/users/applications/${userId}`);
             setApplications(response.data);
         } catch (error) {
             console.error("Lỗi lấy danh sách ứng tuyển:", error);

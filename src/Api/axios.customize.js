@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_URL,
+  baseURL: 'https://final-joblink-backend.onrender.com',
 });
 
 // Alter defaults after instance has been created

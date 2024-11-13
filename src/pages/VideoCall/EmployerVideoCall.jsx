@@ -22,7 +22,7 @@ function EmployerVideoCall() {
                     setClient(newClient);
                     console.log('newClient: ', newClient);
 
-                    const tokenUrl = 'http://localhost:8080/getAccessTokenForEmployer';
+                    const tokenUrl = 'https://final-joblink-backend.onrender.com/getAccessTokenForEmployer';
 
                     if (!role) {
                         console.error('Role is not defined');

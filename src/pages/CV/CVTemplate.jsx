@@ -320,7 +320,7 @@ const CVTemplate = () => {
                 })),
             };
             console.log(formData);
-            const response = await axios.post('http://localhost:8080/v1/api/users/cv', formData);
+            const response = await axios.post('https://final-joblink-backend.onrender.com/v1/api/users/cv', formData);
             alert(response.data.message);
         } catch (error) {
             console.error("Error saving CV:", error);

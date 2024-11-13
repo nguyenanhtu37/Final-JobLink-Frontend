@@ -13,7 +13,7 @@ const Profile = () => {
 
     useEffect(() => {
         // Fetch profession options on component mount
-        axios.get('http://localhost:8080/v1/api/admin/profession')
+        axios.get('https://final-joblink-backend.onrender.com/v1/api/admin/profession')
             .then(response => {
                 setProfessionOptions(response.data);
             })
