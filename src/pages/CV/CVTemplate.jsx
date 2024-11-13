@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from 'axios';
 import { useSelector } from "react-redux";
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-import { addDoc } from 'firebase/firestore';
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+// import { addDoc } from 'firebase/firestore';
 import './CVTemplate.scss';
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
-import firebaseConfig from "../../firebaseConfig";
+// import firebaseConfig from "../../firebaseConfig";
 import { AuditOutlined, StarOutlined, ProjectOutlined, CalculatorOutlined, SolutionOutlined, PhoneOutlined, PushpinOutlined, TrophyOutlined, GoogleOutlined, LinkOutlined, GlobalOutlined, BookOutlined, FileDoneOutlined, VideoCameraAddOutlined, DownloadOutlined, DeleteOutlined, SaveOutlined } from '@ant-design/icons';
 
 const CVTemplate = () => {
@@ -34,9 +34,9 @@ const CVTemplate = () => {
     });
 
     // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    const db = getFirestore(app);
+    // const app = initializeApp(firebaseConfig);
+    // const analytics = getAnalytics(app);
+    // const db = getFirestore(app);
 
     // useEffect(() => {
     //     async function getCities(db) {
